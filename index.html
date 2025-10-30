@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="bgMusic" autoplay loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+      <div>
+        <h1 class="header_text">Hey kindhearted soul, I don’t normally get signs from the universe, but this one says… pizza with you. Can we go out???</h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3BqNms1bHlqMXQydjMxMjNld3c5YTBuZjUxZzJsbnRnb3ZtdjVvYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FEsDNy8LHzHj6yrAKe/giphy.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          Sochna Pdega Thoda
+        </button>
+
+        <script>
+          function nextPage() {
+            window.location.href = "yes.html";
+          }
+
+
+          function moveButton() {
+            const noButton = document.getElementById("noButton");
+            
+            // Add this line to make the button movable
+            noButton.style.position = 'absolute';
+          
+            var x =
+              Math.random() *
+              (window.innerWidth - noButton.offsetWidth);
+            var y =
+              Math.random() *
+              (window.innerHeight - noButton.offsetHeight);
+            
+            noButton.style.left = `${x}px`;
+            noButton.style.top = `${y}px`;
+          }
+
+          
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+

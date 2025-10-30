@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yay!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Yaaaaayyyy!! See you soon!</h1>
+      </div>
+
+      <div class="gif_container">
+        <img
+          src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif"
+          alt="Happy dance"
+        />
+      </div>
+
+      <!-- Form to capture the date and email it to you -->
+      <form
+        action="https://formsubmit.co/10a4a8dab00ec401afe7c0207d6b5b59"
+        method="POST"
+        class="date-picker-container"
+      >
+        <h2 class="header_text">Tho apn kab ja skte h bhar?</h2>
+        
+        <!-- The date input. The 'name' attribute is important! -->
+        <input type="date" id="datePicker" name="date" required />
+
+        <!-- This hidden input sets the email subject line -->
+        <input type="hidden" name="_subject" value="She said Yes! New Date!">
+        
+        <!-- The submit button for the form -->
+        <button type="submit" class="btn">Confirm the Date</button>
+      </form>
+
+    </div>
+  </body>
+</html>
+
+
+
